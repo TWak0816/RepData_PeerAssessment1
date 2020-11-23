@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-  html_document:
-    keep_md: true
+  html_document: 
+    keep_md: yes
 ---
 
 
@@ -50,7 +50,7 @@ abline(v=mean(df1$steps), col="blue")
 abline(v=median(df1$steps), col="orange")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
 
 ### Mean total number of steps per day is 9,354.23
 
@@ -86,7 +86,7 @@ abline(h=max(df2$steps), col="blue")
 abline(h=min(df2$steps), col="orange")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
 
 ### At 835th interval and 206 steps were taken on average 
 
@@ -124,7 +124,7 @@ df1_filled <- summarise(dates_filled, steps=sum(steps))
 hist(df1_filled$steps, breaks=10,main="Distribution of Daily Steps", xlab="# of Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
 
 ### Mean and median of the new dataset
 
@@ -158,7 +158,7 @@ hist(df1_filled$steps, breaks=10,main="Distribution of Daily Steps [New]", xlab=
 abline(v=mean(df1_filled$steps),col="red")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
@@ -206,6 +206,6 @@ plot(df_wends_in$interval,df_wends_in$steps, type="l",
      xlab="5-minute interval", ylab="# of Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png)
 
 
