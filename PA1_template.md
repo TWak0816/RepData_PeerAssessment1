@@ -207,5 +207,3 @@ plot(df_wends_in$interval,df_wends_in$steps, type="l",
 ```
 
 ![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png)
-
-

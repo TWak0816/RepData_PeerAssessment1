@@ -114,5 +114,3 @@ plot(df_wends_in$interval,df_wends_in$steps, type="l",
      main="Weekends Activity Pattern",
      xlab="5-minute interval", ylab="# of Steps")
 ```
-
-
